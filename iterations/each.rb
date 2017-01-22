@@ -21,8 +21,17 @@ numbers.each do |number|
 end
 puts "This is the sum of the array of: #{numbers} = #{sum}"
 
-#4 Print the key and value pair of a hash.
-hash = {"KEY" => "VALUE"}
+#4 Print the key and value pairs of a hash.
+hash = {"KEY" => "VALUE", "KEYS" => "VALUES"}
 hash.each do |k, v|
-  puts "This is the key: #{k}, and this is the value: #{v}"
+  puts "These are the keys: #{k}, and these are the values: #{v}"
 end
+
+#5 Find the sum of values hash.
+hash = {"KEY" => 1, "KEYS" => 2}
+sum = 0
+hash.each do |k, v|
+  puts "#{k} has a value of #{v}"
+  sum += v
+end
+puts "The sum of values is #{sum}"
